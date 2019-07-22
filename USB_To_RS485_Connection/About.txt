@@ -1,0 +1,25 @@
+#About
+
+For the chosen stepper motor from Oriental Motor LLC, a driver is required that must be communicated
+with via RS485 protocol.  In order to interface such communication with micro-manager on a PC,
+a USB To RS485 adapter must be purchased.
+
+The documentation pertaining to this particular adapter is in regards to the recommended adapter
+by Oriental Motor.  Please note, Oriental Motor requires a custom wiring of Ethernet wires into
+the adapter.  DO NOT order adapters that are simply listed as USB to RS-485, as Oriental Motor
+uses a non-standard wire configuration into their units.  
+
+The appropriate instructions for assembling an RS-485 Adapter with an ethernet cable can be found
+in the Schematics Folder.
+
+    Necessary tools: 
+
+		Miniature flat-head screw driver
+		Wire Stripper
+		Fine Wire Stripper (for stripping the ethernet wires)
+
+See the Documentation and datasheets.
+
+In regards to the driver written for the Autofocus motor at the other end, it must be noted
+that the driver IS NOT adapter agnostic.  It makes use of the FTDI USB chip and drivers.  If may
+be possible to use another adapter, but one must make certain that it is an FTDI based adapter.
