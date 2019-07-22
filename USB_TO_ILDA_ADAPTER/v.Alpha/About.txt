@@ -1,0 +1,27 @@
+#Version Alpha
+#About.txt
+
+The first prototype that was used to maintain a stable control over the PRO-1600RGB laser from 
+Laserworld.  This prototype is what was used to do primary testing and proof of this system as
+integrated into uManager microscopy setup software.  It, however, implements an erroneous reading
+of the ILDA standard and as such is not guaranteed to work with all ILDA IO pins.
+
+As such, this alpha version stands as proof of control of the PRO-1600RGB and may be tested against 
+other ILDA laser boxes if so desired to ensure performance. 
+
+Schematic:
+
+    The schematic makes use of a Deprected switch (see schematic itself for details).  This switch
+will become a production chokepoint.  Efforts to formalize and proof v1.0 move toward this.
+
+PCB:
+
+   The alpha prototype exists in a breadboarded state in the setup this lab tested against.  As such,
+there are no Gerber files at this moment.  It is seen as a better use of time to work on proving
+the v1.0 PCB instead.  The following version however will require a reworking of uManager Device 
+Library code to accomodate an increase in IO if that is desired.
+
+Software
+
+    C++ code was written as a .dll on Micro-manager for the alpha version explicitly.  In order to 
+test the setup this lab used.

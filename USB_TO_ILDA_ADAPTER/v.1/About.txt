@@ -1,0 +1,28 @@
+#Version 1
+#About.txt
+
+This is the follow-up theoretical designed controller for compliance with the ILDA IO standard.  This
+standard requires differential signals at the inputs and it's lack of firm discussion on pin sinking
+require a more robust account for potential "operational signal" current draw.
+
+Additionally, DAC power is supplied via wall power with regulators, in order to reduce fluctuations
+in voltage that can occur by overloading the load on a set of USB buses for a computer. 
+
+Schematic:
+
+    The schematic is done in theory, but may need revisions upon breadboarding or pcb testing in an 
+actual setup.
+
+PCB:
+
+   The PCB has not yet been arranged nor has a breadboard been proven yet.  A finalized Gerber file
+should be introduced after a successful iteration and testing.
+
+Software
+
+    C++ code was written as a .dll on Micro-manager for the alpha version explicitly. The Version 1
+attempts to implement the same USB bridge triggers so that there is no need to change the .dll for
+the sake of changing hardware.
+
+Further expansions to the other optional ILDA pins may be achieved in a future iteration with adjustments 
+to the .dll.
